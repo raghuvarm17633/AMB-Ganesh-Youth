@@ -447,11 +447,12 @@
   .social-row a:hover{background:rgba(230,126,34,0.15);color:var(--gold-bright);border-color:var(--marigold);}
 
   /* donation section */
-  .donate-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:start;}
+  .donate-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:stretch;}
   .donate-card{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(212,160,23,0.25);
     border-radius:16px;padding:28px;
+    display:flex;flex-direction:column;height:100%;
   }
   .donate-card h3{
     font-family:'Yatra One',cursive;
@@ -479,7 +480,7 @@
   .qr-panel .qr-sub{font-size:0.78rem;color:#666;margin-top:2px;}
   .donate-card .fine-print{
     font-size:0.82rem;color:var(--cream-dim);
-    text-align:center;margin-top:16px;line-height:1.5;
+    text-align:center;margin-top:auto;padding-top:16px;line-height:1.5;
   }
   .bank-row{
     display:flex;justify-content:space-between;gap:12px;
@@ -602,6 +603,7 @@
       <li><a href="#volunteer">Volunteer</a></li>
       <li><a href="#donate">Donate</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#location">Location</a></li>
       <li><a href="#location">Location</a></li>
     </ul>
   </nav>
@@ -993,8 +995,9 @@
         <h3>📲 PhonePe / UPI Payment</h3>
         <div class="qr-panel">
           <div class="qr-img-box">Add your<br>UPI QR code<br>here</div>
-          <div class="qr-name">GADDAM RAGHU VARMA</div>
-          <div class="qr-sub">Scan with any UPI / PhonePe app</div>
+          <div class="qr-sub" style="margin-top:14px;">Scan to Donate</div>
+          <div class="qr-name" style="margin-top:10px;">UPI ID:<br>ambganeshyouth@upi</div>
+          <div class="qr-name" style="margin-top:10px;">Name:<br>AMB Ganesh Youth</div>
         </div>
         <p class="fine-print">Scan the QR code using PhonePe, GPay, Paytm, or any UPI app. All transactions are secure. 🙏</p>
       </div>
@@ -1011,10 +1014,12 @@
 
       <div class="donate-card">
         <h3>💝 Donation Causes</h3>
-        <div class="cause-row"><span class="k">Festival Decorations</span><span class="v">Ongoing</span></div>
-        <div class="cause-row"><span class="k">Annadanam Sponsorship</span><span class="v">₹1001+</span></div>
-        <div class="cause-row"><span class="k">Cultural Program Sponsorship</span><span class="v">₹501+</span></div>
-        <div class="cause-row"><span class="k">General Donation</span><span class="v">Any amount</span></div>
+        <div class="cause-row"><span class="k">🌸 Flowers</span><span class="v">₹101+</span></div>
+        <div class="cause-row"><span class="k">🍛 Annadanam</span><span class="v">₹501+</span></div>
+        <div class="cause-row"><span class="k">🎵 Cultural Programs</span><span class="v">₹1001+</span></div>
+        <div class="cause-row"><span class="k">💡 Lighting</span><span class="v">₹501+</span></div>
+        <div class="cause-row"><span class="k">🎪 Pandal Decoration</span><span class="v">₹1001+</span></div>
+        <div class="cause-row"><span class="k">🎇 General Donation</span><span class="v">Any Amount</span></div>
         <p class="fine-print">All donations go directly to festival arrangements and community service activities.</p>
       </div>
     </div>
@@ -1050,6 +1055,26 @@
       <a href="#">Instagram</a>
       <a href="#">YouTube</a>
       <a href="#">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">📍 Find Us</div>
+      <h2>Our Location</h2>
+    </div>
+    <div class="location-card">
+      <div class="loc-name">🛕 AMB Ganesh Youth</div>
+      <a class="location-btn" href="https://maps.google.com/?q=9VXV+4FP,+MDR27,+Isukagundam,+Gudem,+Ambavaram,+Andhra+Pradesh+523357" target="_blank">📍 View on Google Maps</a>
+      <iframe
+        class="location-map"
+        src="https://maps.google.com/maps?q=9VXV+4FP,+MDR27,+Isukagundam,+Gudem,+Ambavaram,+Andhra+Pradesh+523357&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 </section>
